@@ -22,13 +22,13 @@ Cada curso acepta, además de su código de venta, un código propio para Educac
 
 - **Es un candado simple, no seguridad bancaria.** El código y la marca de finalización están del lado del navegador: sirven para ordenar la ruta, y una persona con conocimientos técnicos podría saltárselos. Para un taller con docentes es suficiente.
 - El avance se guarda **por navegador**. En un laboratorio compartido, el botón «Reiniciar mi progreso» deja el equipo listo para otra persona.
-- La dirección de esta página debe ser `https://cursoseducacioncontinua.vercel.app/` (nombre del proyecto en Vercel: `cursoseducacioncontinua`), porque los cursos regresan a esa dirección. Si usas otra, cámbiala en `HUB_URL` del archivo `src/ec.js` de cada curso.
+- La dirección de esta página debe ser `https://portalformacontinuasin.vercel.app/`, porque los cursos regresan a esa dirección. Si usas otra, cámbiala en `HUB_URL` del archivo `src/ec.js` de cada curso.
 - Si cambias el orden o agregas cursos, edita `COURSES` en `src/App.jsx`. El texto `SALT` debe ser idéntico al de `src/ec.js` en los cursos.
 
 ## Cómo publicarla
 
 1. Sube el contenido de esta carpeta a un repositorio nuevo de GitHub (sin `node_modules` ni `dist`).
-2. En vercel.com, «Add New Project» → importa el repositorio y, en el nombre del proyecto, escribe `cursoseducacioncontinua`.
+2. En vercel.com, «Add New Project» → importa el repositorio y usa el nombre de proyecto que prefieras (la dirección debe coincidir con `HUB_URL`).
 3. Pulsa «Deploy».
 
 ## Autora
